@@ -1,0 +1,242 @@
+*{
+    text-align: center;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color:#0F1014;
+}
+h1{
+    background-color: white;
+    color: rgb(35, 35, 35);
+    margin-bottom: 40px;
+    padding: 30px;
+}
+h2,h3{
+    margin: 15px;
+    color: rgb(255, 255, 255);
+}
+.parent{
+    width: 100%;
+}
+.child{
+    width: 55%;
+    display: flex;
+}
+.container{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonbox{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+#buttonbox{
+    flex-direction: row;
+}
+.buttons{
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+
+}
+#rock{
+    background-image: url(Rock.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin: 20px;
+}
+#paper{
+    background-image: url(Paper.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin: 20px;
+}
+#scissors{
+    background-image: url(Scissors.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 7px;
+    border: 2px solid black;
+    margin: 20px;
+}
+#results{
+    margin: 25px;
+}
+.buttons:hover{
+    border: none;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 10px rgb(53, 53, 53);
+    transition: 400ms ease-in-out;
+}
+.son h2{
+    display: inline-block;
+    margin: 5px;
+}
+.son{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*Responsive*/
+@media (max-width:1355px) {
+    .buttons{
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width:1260px) {
+    .buttons{
+        width: 70px;
+        height: 70px;
+    }
+    .buttonbox{
+        width: 55%;
+    }
+    h1{
+        padding: 25px;
+        margin-bottom: 35px;
+    }
+}
+@media (max-width:1060px) {
+    h1{
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .buttons{
+        width: 60px;
+        height: 60px;
+    }
+    .buttonbox{
+        width: 60%;
+    }
+    .buttonbox{
+        margin: 30px auto;
+    }
+}
+@media (max-width:974px) {
+    .buttons{
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    .buttonbox{
+        width: 65%;
+    }
+    .child{
+        width: 70%;
+    }
+}
+@media (max-width:1355px) {
+
+    .buttonbox{
+        width: 70%;
+    }
+}
+@media (max-width:706px) {
+
+    .buttonbox{
+        width: 80%;
+    }
+    .child{
+        width: 85%;
+    }
+    .buttonbox{
+        margin: 25px auto;
+    }
+}
+@media (max-width:588px) {
+
+    .buttonbox{
+        width: 90%;
+    }
+    #buttonbox{
+        width: 60%;
+    }
+}
+@media (max-width:517px) {
+
+    .child{
+        width: 100%;
+    }
+    #buttonbox{
+        width: 65%;
+    }
+}
+@media (max-width:440px) {
+    .buttonbox{
+        width: 95%;
+    }
+    h2{
+        font-size: 21px;
+    }
+    h1{
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .buttonbox{
+        width: 100%;
+    }
+}
+@media (max-width:389px) {
+    h1{
+        padding: 15px;
+        margin-bottom: 25px;
+        font-size: 26px;
+    }
+    #buttonbox{
+        width: 70%;
+    }
+    #cc{
+        width: 110%;
+    }
+    .cc h2{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (max-width:350px) {
+    #buttonbox{
+        width: 80%;
+    }
+    .cc h2{
+        font-size: 20px;
+    }
+}
+@media (max-width:350px) {
+    #buttonbox{
+        width: 85%;
+    }
+    .cc h2{
+        margin: 10px;
+    }
+    #cc{
+        width: 100%;
+    }
+}
+@media (max-width:310px) {
+    #buttonbox{
+        width: 95%;
+    }
+}
+@media (max-width:310px) {
+    #buttonbox{
+        width: 100%;
+    }
+}
